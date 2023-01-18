@@ -49,7 +49,7 @@ def start_training(char_name: str, char_class: str) -> str:
     print('Если не хочешь тренироваться, введи команду skip.')
     cmd = None
     while cmd != 'skip':
-        cmd: str = input('Введи команду: ')#
+        cmd: str = input('Введи команду: ')
         if cmd == 'attack':
             print(attack(char_name, char_class))
         if cmd == 'defence':
@@ -60,8 +60,8 @@ def start_training(char_name: str, char_class: str) -> str:
 
 
 def choice_char_class() -> str:
-    approve_choice: str = None  #
-    char_class: str= None       #
+    approve_choice: str = None
+    char_class: str = None
     while approve_choice != 'y':
         char_class = input('Введи название персонажа, '
                            'за которого хочешь играть: '
